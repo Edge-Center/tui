@@ -6,7 +6,7 @@ Prerequisites
 -------------
 To run this application, you need to have the following software installed on your system:
 * Go 1.20+
-* Node.js 12+
+* Node.js 16+
 * NPM 6+
 * Docker with docker-compose
 
