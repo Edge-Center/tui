@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Login from 'views/Login.vue';
 import Modules from 'views/Modules.vue';
-import Stacks from 'views/Stacks.vue';
 import { getUser } from '@/utils';
 
 const routes = [
@@ -18,12 +17,7 @@ const routes = [
     path: '/modules',
     name: 'Modules',
     component: Modules,
-  },
-  {
-    path: '/stacks',
-    name: 'Stacks',
-    component: Stacks,
-  },
+  }
 ];
 
 const router = createRouter({
