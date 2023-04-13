@@ -13,7 +13,7 @@
 /*
   imports
 */
-import { CloudStorage, AllApplication } from '@icon-park/vue-next';
+import { CloudStorage } from '@icon-park/vue-next';
 
 /*
   menu
@@ -23,12 +23,7 @@ const menuList = [
     name: '/modules',
     icon: CloudStorage,
     title: 'Modules',
-  },
-  {
-    name: '/stacks',
-    icon: AllApplication,
-    title: 'Stacks',
-  },
+  }
 ];
 </script>
 
