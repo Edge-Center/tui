@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Login from 'views/Login.vue';
 import Modules from 'views/Modules.vue';
+import Credentials from 'views/Credentials.vue';
 import { getUser } from '@/utils';
 
 const routes = [
@@ -17,7 +18,12 @@ const routes = [
     path: '/modules',
     name: 'Modules',
     component: Modules,
-  }
+  },
+  {
+    path: '/credentials',
+    name: 'Credentials',
+    component: Credentials,
+  },
 ];
 
 const router = createRouter({
