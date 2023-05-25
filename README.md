@@ -12,11 +12,19 @@ To run this application, you need to have the following software installed on yo
 
 Getting Started
 ---------------
-1. To start the application, run the following command from the project root directory:
+1. To download the terraform binary, you must specify a proxy address via HTTPS_PROXY env.
+   ```
+   export HTTPS_PROXY=http://your.proxy
+   ```
+2. To start the application, run the following command from the project root directory:
     ```
-    make up
+    make up_proxy
     ```
-2. Once all containers are running, the application can be opened in a browser at: 
+   or without proxy
+   ```
+   make up
+    ```
+3. Once all containers are running, the application can be opened in a browser at: 
    ```
    http://localhost:8080/
    ```

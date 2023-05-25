@@ -2,6 +2,8 @@ FROM alpine:3.17.3
 
 ARG TERRAFORM_VERSION
 ENV TERRAFORM_VERSION=${TERRAFORM_VERSION}
+ARG HTTPS_PROXY
+ENV HTTPS_PROXY=${HTTPS_PROXY}
 
 RUN apk add --update --no-cache ca-certificates curl unzip \
     && curl -sSL https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip -o /tmp/terraform.zip \
