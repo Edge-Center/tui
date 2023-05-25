@@ -68,6 +68,7 @@ services:
       dockerfile: terraform.Dockerfile
       args:
         TERRAFORM_VERSION: 1.4.4
+        HTTPS_PROXY: ${HTTPS_PROXY}
     container_name: tui-terraform-latest
     volumes:
       - terraform:/terraform
